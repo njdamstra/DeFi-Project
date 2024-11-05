@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {ILendPoolLoanV1} from 'src/migrations/IBendV1Interface.sol';
+import {ILendPoolLoanV1} from 'bend-code/src/migrations/IBendV1Interface.sol';
 
 contract MockBendV1LendPoolLoan is ILendPoolLoanV1 {
   struct LoanData {

@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 import {Ownable2Step} from '@openzeppelin/contracts/access/Ownable2Step.sol';
 import {ERC20} from '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 
-import {ISavingsDai, IERC20Metadata} from 'src/yield/sdai/ISavingsDai.sol';
+import {ISavingsDai, IERC20Metadata} from 'bend-code/src/yield/sdai/ISavingsDai.sol';
 
 contract MockSDAI is ISavingsDai, ERC20, Ownable2Step {
   uint256 private constant RAY = 10 ** 27;

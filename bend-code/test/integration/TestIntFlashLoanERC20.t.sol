@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import 'src/libraries/helpers/Constants.sol';
-import 'src/libraries/helpers/Errors.sol';
+import 'bend-code/src/libraries/helpers/Constants.sol';
+import 'bend-code/src/libraries/helpers/Errors.sol';
 
-import 'test/mocks/MockFlashLoanReceiver.sol';
+import 'bend-code/test/mocks/MockFlashLoanReceiver.sol';
 
-import 'test/helpers/TestUser.sol';
-import 'test/setup/TestWithBaseAction.sol';
+import 'bend-code/test/helpers/TestUser.sol';
+import 'bend-code/test/setup/TestWithBaseAction.sol';
 
 contract TestIntFlashLoanERC20 is TestWithBaseAction {
   MockFlashLoanReceiver mockReceiver;

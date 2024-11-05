@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
 
-import {PoolManager} from 'src/PoolManager.sol';
-import {Installer} from 'src/modules/Installer.sol';
-import {PoolLens} from 'src/modules/PoolLens.sol';
+import {PoolManager} from 'bend-code/src/PoolManager.sol';
+import {Installer} from 'bend-code/src/modules/Installer.sol';
+import {PoolLens} from 'bend-code/src/modules/PoolLens.sol';
 
-import '@forge-std/Test.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Test.sol';
 
 // how to run this testcase
 // forge test -vvv --match-contract TestDebugFork --fork-url https://eth-sepolia.g.alchemy.com/v2/{key} --fork-block-number {nnn}

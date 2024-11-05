@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import 'src/libraries/helpers/Constants.sol';
-import 'src/libraries/helpers/Errors.sol';
+import 'bend-code/src/libraries/helpers/Constants.sol';
+import 'bend-code/src/libraries/helpers/Errors.sol';
 
-import 'src/libraries/types/ResultTypes.sol';
+import 'bend-code/src/libraries/types/ResultTypes.sol';
 
-import 'test/setup/TestWithPrepare.sol';
+import 'bend-code/test/setup/TestWithPrepare.sol';
 
 contract TestUIPoolLens is TestWithPrepare {
   function onSetUp() public virtual override {

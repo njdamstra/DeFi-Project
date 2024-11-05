@@ -4,19 +4,19 @@ pragma solidity ^0.8.0;
 import {IERC20Metadata} from '@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol';
 import {IERC721} from '@openzeppelin/contracts/token/ERC721/IERC721.sol';
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
-import {WadRayMath} from 'src/libraries/math/WadRayMath.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
+import {WadRayMath} from 'bend-code/src/libraries/math/WadRayMath.sol';
 
-import {AddressProvider} from 'src/AddressProvider.sol';
-import {PriceOracle} from 'src/PriceOracle.sol';
-import {ConfiguratorPool} from 'src/modules/ConfiguratorPool.sol';
-import {Configurator} from 'src/modules/Configurator.sol';
-import {DefaultInterestRateModel} from 'src/irm/DefaultInterestRateModel.sol';
+import {AddressProvider} from 'bend-code/src/AddressProvider.sol';
+import {PriceOracle} from 'bend-code/src/PriceOracle.sol';
+import {ConfiguratorPool} from 'bend-code/src/modules/ConfiguratorPool.sol';
+import {Configurator} from 'bend-code/src/modules/Configurator.sol';
+import {DefaultInterestRateModel} from 'bend-code/src/irm/DefaultInterestRateModel.sol';
 
-import {Configured, ConfigLib, Config} from 'config/Configured.sol';
+import {Configured, ConfigLib, Config} from 'bend-code/config/Configured.sol';
 import {DeployBase} from './DeployBase.s.sol';
 
-import '@forge-std/Script.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Script.sol';
 
 contract InitConfigPool is DeployBase {
   using ConfigLib for Config;

@@ -3,9 +3,9 @@ pragma solidity ^0.8.0;
 
 import {Ownable2StepUpgradeable} from '@openzeppelin/contracts-upgradeable/access/Ownable2StepUpgradeable.sol';
 
-import {IACLManager} from 'src/interfaces/IACLManager.sol';
-import {IAddressProvider} from 'src/interfaces/IAddressProvider.sol';
-import {IPoolManager} from 'src/interfaces/IPoolManager.sol';
+import {IACLManager} from 'bend-code/src/interfaces/IACLManager.sol';
+import {IAddressProvider} from 'bend-code/src/interfaces/IAddressProvider.sol';
+import {IPoolManager} from 'bend-code/src/interfaces/IPoolManager.sol';
 
 /**
  * @title AddressProvider

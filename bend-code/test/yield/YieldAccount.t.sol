@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import 'src/interfaces/IWETH.sol';
+import 'bend-code/src/interfaces/IWETH.sol';
 
-import 'src/libraries/helpers/Constants.sol';
-import 'src/libraries/helpers/Errors.sol';
-import 'src/yield/YieldAccount.sol';
+import 'bend-code/src/libraries/helpers/Constants.sol';
+import 'bend-code/src/libraries/helpers/Errors.sol';
+import 'bend-code/src/yield/YieldAccount.sol';
 
-import 'test/setup/TestWithSetup.sol';
-import '@forge-std/Test.sol';
+import 'bend-code/test/setup/TestWithSetup.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Test.sol';
 
 contract TestYieldAccount is TestWithSetup {
   YieldAccount internal yieldAccount;

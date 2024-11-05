@@ -4,16 +4,16 @@ pragma solidity ^0.8.0;
 import {TransparentUpgradeableProxy} from '@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol';
 import {ProxyAdmin} from '@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol';
 
-import {IAddressProvider} from 'src/interfaces/IAddressProvider.sol';
+import {IAddressProvider} from 'bend-code/src/interfaces/IAddressProvider.sol';
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
 
-import {BendV1Migration} from 'src/migrations/BendV1Migration.sol';
+import {BendV1Migration} from 'bend-code/src/migrations/BendV1Migration.sol';
 
-import {Configured, ConfigLib, Config} from 'config/Configured.sol';
+import {Configured, ConfigLib, Config} from 'bend-code/config/Configured.sol';
 import {DeployBase} from './DeployBase.s.sol';
 
-import '@forge-std/Script.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Script.sol';
 
 contract DeployContract is DeployBase {
   using ConfigLib for Config;

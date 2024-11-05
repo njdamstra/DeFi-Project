@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {StorageSlot} from 'src/libraries/logic/StorageSlot.sol';
-import {DataTypes} from 'src/libraries/types/DataTypes.sol';
+import {StorageSlot} from 'bend-code/src/libraries/logic/StorageSlot.sol';
+import {DataTypes} from 'bend-code/src/libraries/types/DataTypes.sol';
 
 abstract contract Storage {
   // Dispatcher and upgrades

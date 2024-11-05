@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import 'src/libraries/helpers/Constants.sol';
+import 'bend-code/src/libraries/helpers/Constants.sol';
 
-import 'test/setup/TestWithBaseAction.sol';
+import 'bend-code/test/setup/TestWithBaseAction.sol';
 
 contract TestIntDepositERC721 is TestWithBaseAction {
   function onSetUp() public virtual override {

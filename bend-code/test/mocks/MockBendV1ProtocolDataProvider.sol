@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {ILendPoolAddressesProviderV1} from 'src/migrations/IBendV1Interface.sol';
-import {IBendProtocolDataProviderV1} from 'src/migrations/IBendV1Interface.sol';
+import {ILendPoolAddressesProviderV1} from 'bend-code/src/migrations/IBendV1Interface.sol';
+import {IBendProtocolDataProviderV1} from 'bend-code/src/migrations/IBendV1Interface.sol';
 
 import './MockBendV1Types.sol';
 import './MockBendV1LendPool.sol';

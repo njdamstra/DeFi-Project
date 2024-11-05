@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import 'src/libraries/helpers/Constants.sol';
+import 'bend-code/src/libraries/helpers/Constants.sol';
 
-import 'test/helpers/TestUser.sol';
-import 'test/setup/TestWithCrossAction.sol';
+import 'bend-code/test/helpers/TestUser.sol';
+import 'bend-code/test/setup/TestWithCrossAction.sol';
 
 contract TestIntCrossRepayERC20 is TestWithCrossAction {
   function onSetUp() public virtual override {

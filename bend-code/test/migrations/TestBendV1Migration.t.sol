@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import 'src/interfaces/IWETH.sol';
+import 'bend-code/src/interfaces/IWETH.sol';
 import '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 import '@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol';
 
-import 'src/libraries/helpers/Constants.sol';
-import 'src/libraries/helpers/Errors.sol';
+import 'bend-code/src/libraries/helpers/Constants.sol';
+import 'bend-code/src/libraries/helpers/Errors.sol';
 
-import 'src/migrations/BendV1Migration.sol';
+import 'bend-code/src/migrations/BendV1Migration.sol';
 
-import 'test/mocks/MockBendV1AddressesProvider.sol';
-import 'test/mocks/MockBendV1LendPool.sol';
-import 'test/mocks/MockBendV1LendPoolLoan.sol';
-import 'test/mocks/MockBendV1ProtocolDataProvider.sol';
+import 'bend-code/test/mocks/MockBendV1AddressesProvider.sol';
+import 'bend-code/test/mocks/MockBendV1LendPool.sol';
+import 'bend-code/test/mocks/MockBendV1LendPoolLoan.sol';
+import 'bend-code/test/mocks/MockBendV1ProtocolDataProvider.sol';
 
-import 'test/setup/TestWithPrepare.sol';
-import '@forge-std/Test.sol';
+import 'bend-code/test/setup/TestWithPrepare.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Test.sol';
 
 contract TestBendV1Migration is TestWithPrepare {
   MockBendV1AddressesProvider internal v1AddressProvider;

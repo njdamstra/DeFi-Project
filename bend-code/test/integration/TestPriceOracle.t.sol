@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {IPriceOracle} from 'src/interfaces/IPriceOracle.sol';
+import {IPriceOracle} from 'bend-code/src/interfaces/IPriceOracle.sol';
 
-import {Errors} from 'src/libraries/helpers/Errors.sol';
-import {PriceOracle} from 'src/PriceOracle.sol';
+import {Errors} from 'bend-code/src/libraries/helpers/Errors.sol';
+import {PriceOracle} from 'bend-code/src/PriceOracle.sol';
 
-import 'test/mocks/MockERC20.sol';
-import 'test/mocks/MockERC721.sol';
-import 'test/mocks/MockChainlinkAggregator.sol';
+import 'bend-code/test/mocks/MockERC20.sol';
+import 'bend-code/test/mocks/MockERC721.sol';
+import 'bend-code/test/mocks/MockChainlinkAggregator.sol';
 
-import 'test/setup/TestWithSetup.sol';
-import '@forge-std/Test.sol';
+import 'bend-code/test/setup/TestWithSetup.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Test.sol';
 
 contract TestPriceOracle is TestWithSetup {
   MockERC20 mockErc20NotUsed;

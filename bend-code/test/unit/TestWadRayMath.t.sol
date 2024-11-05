@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {WadRayMath} from 'src/libraries/math/WadRayMath.sol';
+import {WadRayMath} from 'bend-code/src/libraries/math/WadRayMath.sol';
 
-import '@forge-std/Test.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Test.sol';
 
 contract TestWadRayMath is Test {
   Vm public tsHEVM = Vm(HEVM_ADDRESS);

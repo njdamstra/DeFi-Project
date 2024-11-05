@@ -5,18 +5,18 @@ import {ERC20} from '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import {SafeERC20} from '@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol';
 import {ERC721} from '@openzeppelin/contracts/token/ERC721/ERC721.sol';
 
-import {WadRayMath} from 'src/libraries/math/WadRayMath.sol';
-import {MathUtils} from 'src/libraries/math/MathUtils.sol';
-import {PercentageMath} from 'src/libraries/math/PercentageMath.sol';
+import {WadRayMath} from 'bend-code/src/libraries/math/WadRayMath.sol';
+import {MathUtils} from 'bend-code/src/libraries/math/MathUtils.sol';
+import {PercentageMath} from 'bend-code/src/libraries/math/PercentageMath.sol';
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
-import {KVSortUtils} from 'src/libraries/helpers/KVSortUtils.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
+import {KVSortUtils} from 'bend-code/src/libraries/helpers/KVSortUtils.sol';
 
-import {IInterestRateModel} from 'src/interfaces/IInterestRateModel.sol';
+import {IInterestRateModel} from 'bend-code/src/interfaces/IInterestRateModel.sol';
 
 import {TestWithBaseAction} from './TestWithBaseAction.sol';
 
-import '@forge-std/Test.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Test.sol';
 
 abstract contract TestWithIsolateAction is TestWithBaseAction {
   using WadRayMath for uint256;

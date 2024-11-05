@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
 
-import 'test/setup/TestWithPrepare.sol';
-import '@forge-std/Test.sol';
+import 'bend-code/test/setup/TestWithPrepare.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Test.sol';
 
 contract TestYieldSavingsDai is TestWithPrepare {
   struct YieldTestVars {

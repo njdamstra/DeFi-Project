@@ -3,12 +3,12 @@ pragma solidity ^0.8.0;
 
 import {IERC20Metadata} from '@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol';
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
 
 import {TestUser} from '../helpers/TestUser.sol';
 import {TestWithData} from './TestWithData.sol';
 
-import '@forge-std/Test.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Test.sol';
 
 abstract contract TestWithPrepare is TestWithData {
   function onSetUp() public virtual override {

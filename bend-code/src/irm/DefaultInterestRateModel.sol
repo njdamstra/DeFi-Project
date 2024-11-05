@@ -8,8 +8,8 @@ import {PercentageMath} from '../libraries/math/PercentageMath.sol';
 import {InputTypes} from '../libraries/types/InputTypes.sol';
 import {Errors} from '../libraries/helpers/Errors.sol';
 
-import {IAddressProvider} from 'src/interfaces/IAddressProvider.sol';
-import {IACLManager} from 'src/interfaces/IACLManager.sol';
+import {IAddressProvider} from 'bend-code/src/interfaces/IAddressProvider.sol';
+import {IACLManager} from 'bend-code/src/interfaces/IACLManager.sol';
 import {IInterestRateModel} from '../interfaces/IInterestRateModel.sol';
 import {IDefaultInterestRateModel} from '../interfaces/IDefaultInterestRateModel.sol';
 

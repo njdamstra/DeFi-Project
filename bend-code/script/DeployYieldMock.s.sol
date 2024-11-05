@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
 
-import {MockERC20} from 'test/mocks/MockERC20.sol';
+import {MockERC20} from 'bend-code/test/mocks/MockERC20.sol';
 
-import {MockStETH} from 'test/mocks/MockStETH.sol';
-import {MockUnstETH} from 'test/mocks/MockUnstETH.sol';
+import {MockStETH} from 'bend-code/test/mocks/MockStETH.sol';
+import {MockUnstETH} from 'bend-code/test/mocks/MockUnstETH.sol';
 
-import {MockeETH} from 'test/mocks/MockeETH.sol';
-import {MockEtherfiWithdrawRequestNFT} from 'test/mocks/MockEtherfiWithdrawRequestNFT.sol';
-import {MockEtherfiLiquidityPool} from 'test/mocks/MockEtherfiLiquidityPool.sol';
-import {MockWeETH} from 'test/mocks/MockWeETH.sol';
+import {MockeETH} from 'bend-code/test/mocks/MockeETH.sol';
+import {MockEtherfiWithdrawRequestNFT} from 'bend-code/test/mocks/MockEtherfiWithdrawRequestNFT.sol';
+import {MockEtherfiLiquidityPool} from 'bend-code/test/mocks/MockEtherfiLiquidityPool.sol';
+import {MockWeETH} from 'bend-code/test/mocks/MockWeETH.sol';
 
-import {MockSDAI} from 'test/mocks/MockSDAI.sol';
-import {MockDAIPot} from 'test/mocks/MockDAIPot.sol';
-import {MockSUSDS} from 'test/mocks/MockSUSDS.sol';
+import {MockSDAI} from 'bend-code/test/mocks/MockSDAI.sol';
+import {MockDAIPot} from 'bend-code/test/mocks/MockDAIPot.sol';
+import {MockSUSDS} from 'bend-code/test/mocks/MockSUSDS.sol';
 
-import {Configured, ConfigLib, Config} from 'config/Configured.sol';
+import {Configured, ConfigLib, Config} from 'bend-code/config/Configured.sol';
 import {DeployBase} from './DeployBase.s.sol';
 
-import '@forge-std/Script.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Script.sol';
 
 contract DeployYieldMock is DeployBase {
   using ConfigLib for Config;

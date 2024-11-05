@@ -6,13 +6,13 @@ import {IERC20Upgradeable} from '@openzeppelin/contracts-upgradeable/token/ERC20
 import {SafeERC20Upgradeable} from '@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol';
 import {IERC721Upgradeable} from '@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol';
 
-import {IAddressProvider} from 'src/interfaces/IAddressProvider.sol';
-import {IFlashLoanReceiver} from 'src/interfaces/IFlashLoanReceiver.sol';
+import {IAddressProvider} from 'bend-code/src/interfaces/IAddressProvider.sol';
+import {IFlashLoanReceiver} from 'bend-code/src/interfaces/IFlashLoanReceiver.sol';
 
 import {IBVaultV2, ICrossLendingV2, IIsolateLendingV2, IFlashLoanV2, IPoolLensV2} from './IBendV2Interface.sol';
 import {ILendPoolAddressesProviderV1, ILendPoolV1, ILendPoolLoanV1, IBendProtocolDataProviderV1} from './IBendV1Interface.sol';
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
 
 /// @notice Contract allowing to migrate a position from BendDAO V1 to V2 easily.
 contract BendV1Migration is Ownable2StepUpgradeable {

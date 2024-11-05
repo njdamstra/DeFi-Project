@@ -4,12 +4,12 @@ pragma solidity ^0.8.0;
 import {Pausable} from '@openzeppelin/contracts/security/Pausable.sol';
 import {ERC721Holder} from '@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol';
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
-import {Events} from 'src/libraries/helpers/Events.sol';
-import {Errors} from 'src/libraries/helpers/Errors.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
+import {Events} from 'bend-code/src/libraries/helpers/Events.sol';
+import {Errors} from 'bend-code/src/libraries/helpers/Errors.sol';
 
-import {Storage} from 'src/base/Storage.sol';
-import {Proxy} from 'src/base/Proxy.sol';
+import {Storage} from 'bend-code/src/base/Storage.sol';
+import {Proxy} from 'bend-code/src/base/Proxy.sol';
 
 abstract contract Base is Storage, Pausable, ERC721Holder {
   constructor() {

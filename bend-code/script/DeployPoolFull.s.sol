@@ -4,32 +4,32 @@ pragma solidity ^0.8.0;
 import {TransparentUpgradeableProxy} from '@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol';
 import {ProxyAdmin} from '@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol';
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
 
-import {AddressProvider} from 'src/AddressProvider.sol';
-import {ACLManager} from 'src/ACLManager.sol';
-import {PriceOracle} from 'src/PriceOracle.sol';
+import {AddressProvider} from 'bend-code/src/AddressProvider.sol';
+import {ACLManager} from 'bend-code/src/ACLManager.sol';
+import {PriceOracle} from 'bend-code/src/PriceOracle.sol';
 
-import {PoolManager} from 'src/PoolManager.sol';
-import {Installer} from 'src/modules/Installer.sol';
-import {ConfiguratorPool} from 'src/modules/ConfiguratorPool.sol';
-import {Configurator} from 'src/modules/Configurator.sol';
-import {BVault} from 'src/modules/BVault.sol';
-import {CrossLending} from 'src/modules/CrossLending.sol';
-import {CrossLiquidation} from 'src/modules/CrossLiquidation.sol';
-import {IsolateLending} from 'src/modules/IsolateLending.sol';
-import {IsolateLiquidation} from 'src/modules/IsolateLiquidation.sol';
-import {Yield} from 'src/modules/Yield.sol';
-import {FlashLoan} from 'src/modules/FlashLoan.sol';
-import {PoolLens} from 'src/modules/PoolLens.sol';
-import {UIPoolLens} from 'src/modules/UIPoolLens.sol';
+import {PoolManager} from 'bend-code/src/PoolManager.sol';
+import {Installer} from 'bend-code/src/modules/Installer.sol';
+import {ConfiguratorPool} from 'bend-code/src/modules/ConfiguratorPool.sol';
+import {Configurator} from 'bend-code/src/modules/Configurator.sol';
+import {BVault} from 'bend-code/src/modules/BVault.sol';
+import {CrossLending} from 'bend-code/src/modules/CrossLending.sol';
+import {CrossLiquidation} from 'bend-code/src/modules/CrossLiquidation.sol';
+import {IsolateLending} from 'bend-code/src/modules/IsolateLending.sol';
+import {IsolateLiquidation} from 'bend-code/src/modules/IsolateLiquidation.sol';
+import {Yield} from 'bend-code/src/modules/Yield.sol';
+import {FlashLoan} from 'bend-code/src/modules/FlashLoan.sol';
+import {PoolLens} from 'bend-code/src/modules/PoolLens.sol';
+import {UIPoolLens} from 'bend-code/src/modules/UIPoolLens.sol';
 
-import {DefaultInterestRateModel} from 'src/irm/DefaultInterestRateModel.sol';
+import {DefaultInterestRateModel} from 'bend-code/src/irm/DefaultInterestRateModel.sol';
 
-import {Configured, ConfigLib, Config} from 'config/Configured.sol';
+import {Configured, ConfigLib, Config} from 'bend-code/config/Configured.sol';
 import {DeployBase} from './DeployBase.s.sol';
 
-import '@forge-std/Script.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Script.sol';
 
 contract DeployPoolFull is DeployBase {
   using ConfigLib for Config;

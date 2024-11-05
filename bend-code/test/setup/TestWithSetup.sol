@@ -6,63 +6,63 @@ import {TransparentUpgradeableProxy} from '@openzeppelin/contracts/proxy/transpa
 import {ProxyAdmin} from '@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol';
 import {IERC20} from '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
-import {WadRayMath} from 'src/libraries/math/WadRayMath.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
+import {WadRayMath} from 'bend-code/src/libraries/math/WadRayMath.sol';
 
-import {IWETH} from 'src/interfaces/IWETH.sol';
+import {IWETH} from 'bend-code/src/interfaces/IWETH.sol';
 
-import {AddressProvider} from 'src/AddressProvider.sol';
-import {ACLManager} from 'src/ACLManager.sol';
-import {PriceOracle} from 'src/PriceOracle.sol';
-import {DefaultInterestRateModel} from 'src/irm/DefaultInterestRateModel.sol';
-import {PoolManager} from 'src/PoolManager.sol';
+import {AddressProvider} from 'bend-code/src/AddressProvider.sol';
+import {ACLManager} from 'bend-code/src/ACLManager.sol';
+import {PriceOracle} from 'bend-code/src/PriceOracle.sol';
+import {DefaultInterestRateModel} from 'bend-code/src/irm/DefaultInterestRateModel.sol';
+import {PoolManager} from 'bend-code/src/PoolManager.sol';
 
-import {YieldAccount} from 'src/yield/YieldAccount.sol';
-import {YieldRegistry} from 'src/yield/YieldRegistry.sol';
-import {YieldEthStakingLido} from 'src/yield/lido/YieldEthStakingLido.sol';
-import {YieldEthStakingEtherfi} from 'src/yield/etherfi/YieldEthStakingEtherfi.sol';
-import {YieldSavingsDai} from 'src/yield/sdai/YieldSavingsDai.sol';
-import {YieldSavingsUSDS} from 'src/yield/susds/YieldSavingsUSDS.sol';
+import {YieldAccount} from 'bend-code/src/yield/YieldAccount.sol';
+import {YieldRegistry} from 'bend-code/src/yield/YieldRegistry.sol';
+import {YieldEthStakingLido} from 'bend-code/src/yield/lido/YieldEthStakingLido.sol';
+import {YieldEthStakingEtherfi} from 'bend-code/src/yield/etherfi/YieldEthStakingEtherfi.sol';
+import {YieldSavingsDai} from 'bend-code/src/yield/sdai/YieldSavingsDai.sol';
+import {YieldSavingsUSDS} from 'bend-code/src/yield/susds/YieldSavingsUSDS.sol';
 
-import {Installer} from 'src/modules/Installer.sol';
-import {ConfiguratorPool} from 'src/modules/ConfiguratorPool.sol';
-import {Configurator} from 'src/modules/Configurator.sol';
-import {BVault} from 'src/modules/BVault.sol';
-import {CrossLending} from 'src/modules/CrossLending.sol';
-import {CrossLiquidation} from 'src/modules/CrossLiquidation.sol';
-import {IsolateLending} from 'src/modules/IsolateLending.sol';
-import {IsolateLiquidation} from 'src/modules/IsolateLiquidation.sol';
-import {Yield} from 'src/modules/Yield.sol';
-import {PoolLens} from 'src/modules/PoolLens.sol';
-import {FlashLoan} from 'src/modules/FlashLoan.sol';
-import {UIPoolLens} from 'src/modules/UIPoolLens.sol';
+import {Installer} from 'bend-code/src/modules/Installer.sol';
+import {ConfiguratorPool} from 'bend-code/src/modules/ConfiguratorPool.sol';
+import {Configurator} from 'bend-code/src/modules/Configurator.sol';
+import {BVault} from 'bend-code/src/modules/BVault.sol';
+import {CrossLending} from 'bend-code/src/modules/CrossLending.sol';
+import {CrossLiquidation} from 'bend-code/src/modules/CrossLiquidation.sol';
+import {IsolateLending} from 'bend-code/src/modules/IsolateLending.sol';
+import {IsolateLiquidation} from 'bend-code/src/modules/IsolateLiquidation.sol';
+import {Yield} from 'bend-code/src/modules/Yield.sol';
+import {PoolLens} from 'bend-code/src/modules/PoolLens.sol';
+import {FlashLoan} from 'bend-code/src/modules/FlashLoan.sol';
+import {UIPoolLens} from 'bend-code/src/modules/UIPoolLens.sol';
 
-import {MockERC20} from 'test/mocks/MockERC20.sol';
-import {MockERC721} from 'test/mocks/MockERC721.sol';
-import {MockFaucet} from 'test/mocks/MockFaucet.sol';
-import {MockStETH} from 'test/mocks/MockStETH.sol';
-import {MockUnstETH} from 'test/mocks/MockUnstETH.sol';
+import {MockERC20} from 'bend-code/test/mocks/MockERC20.sol';
+import {MockERC721} from 'bend-code/test/mocks/MockERC721.sol';
+import {MockFaucet} from 'bend-code/test/mocks/MockFaucet.sol';
+import {MockStETH} from 'bend-code/test/mocks/MockStETH.sol';
+import {MockUnstETH} from 'bend-code/test/mocks/MockUnstETH.sol';
 
-import {MockeETH} from 'test/mocks/MockeETH.sol';
-import {MockEtherfiLiquidityPool} from 'test/mocks/MockEtherfiLiquidityPool.sol';
-import {MockEtherfiWithdrawRequestNFT} from 'test/mocks/MockEtherfiWithdrawRequestNFT.sol';
+import {MockeETH} from 'bend-code/test/mocks/MockeETH.sol';
+import {MockEtherfiLiquidityPool} from 'bend-code/test/mocks/MockEtherfiLiquidityPool.sol';
+import {MockEtherfiWithdrawRequestNFT} from 'bend-code/test/mocks/MockEtherfiWithdrawRequestNFT.sol';
 
-import {MockBendNFTOracle} from 'test/mocks/MockBendNFTOracle.sol';
-import {MockChainlinkAggregator} from 'test/mocks/MockChainlinkAggregator.sol';
+import {MockBendNFTOracle} from 'bend-code/test/mocks/MockBendNFTOracle.sol';
+import {MockChainlinkAggregator} from 'bend-code/test/mocks/MockChainlinkAggregator.sol';
 
-import {MockDAIPot} from 'test/mocks/MockDAIPot.sol';
-import {MockSDAI} from 'test/mocks/MockSDAI.sol';
-import {MockSUSDS} from 'test/mocks/MockSUSDS.sol';
+import {MockDAIPot} from 'bend-code/test/mocks/MockDAIPot.sol';
+import {MockSDAI} from 'bend-code/test/mocks/MockSDAI.sol';
+import {MockSUSDS} from 'bend-code/test/mocks/MockSUSDS.sol';
 
-import {SDAIPriceAdapter} from 'src/oracles/SDAIPriceAdapter.sol';
-import {SUSDSPriceAdapter} from 'src/oracles/SUSDSPriceAdapter.sol';
+import {SDAIPriceAdapter} from 'bend-code/src/oracles/SDAIPriceAdapter.sol';
+import {SUSDSPriceAdapter} from 'bend-code/src/oracles/SUSDSPriceAdapter.sol';
 
-import {MockDelegateRegistryV2} from 'test/mocks/MockDelegateRegistryV2.sol';
+import {MockDelegateRegistryV2} from 'bend-code/test/mocks/MockDelegateRegistryV2.sol';
 
 import {TestUser} from '../helpers/TestUser.sol';
 import {TestWithUtils} from './TestWithUtils.sol';
 
-import '@forge-std/Test.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Test.sol';
 
 abstract contract TestWithSetup is TestWithUtils {
   Vm public tsHEVM = Vm(HEVM_ADDRESS);

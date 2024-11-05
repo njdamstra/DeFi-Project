@@ -6,9 +6,9 @@ import {ERC721} from '@openzeppelin/contracts/token/ERC721/ERC721.sol';
 import {ERC721Enumerable} from '@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol';
 import {IERC20} from '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 
-import {IeETH} from 'src/yield/etherfi/IeETH.sol';
-import {ILiquidityPool} from 'src/yield/etherfi/ILiquidityPool.sol';
-import {IWithdrawRequestNFT} from 'src/yield/etherfi/IWithdrawRequestNFT.sol';
+import {IeETH} from 'bend-code/src/yield/etherfi/IeETH.sol';
+import {ILiquidityPool} from 'bend-code/src/yield/etherfi/ILiquidityPool.sol';
+import {IWithdrawRequestNFT} from 'bend-code/src/yield/etherfi/IWithdrawRequestNFT.sol';
 
 contract MockEtherfiWithdrawRequestNFT is IWithdrawRequestNFT, ERC721Enumerable, Ownable2Step {
   IeETH private _eETH;

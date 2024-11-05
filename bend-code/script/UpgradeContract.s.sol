@@ -4,24 +4,24 @@ pragma solidity ^0.8.0;
 import {ITransparentUpgradeableProxy} from '@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol';
 import {ProxyAdmin} from '@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol';
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
 
-import {Configured, ConfigLib, Config} from 'config/Configured.sol';
+import {Configured, ConfigLib, Config} from 'bend-code/config/Configured.sol';
 import {DeployBase} from './DeployBase.s.sol';
 
-import {IAddressProvider} from 'src/interfaces/IAddressProvider.sol';
+import {IAddressProvider} from 'bend-code/src/interfaces/IAddressProvider.sol';
 
-import {AddressProvider} from 'src/AddressProvider.sol';
-import {PriceOracle} from 'src/PriceOracle.sol';
+import {AddressProvider} from 'bend-code/src/AddressProvider.sol';
+import {PriceOracle} from 'bend-code/src/PriceOracle.sol';
 
-import {YieldRegistry} from 'src/yield/YieldRegistry.sol';
-import {YieldEthStakingLido} from 'src/yield/lido/YieldEthStakingLido.sol';
-import {YieldEthStakingEtherfi} from 'src/yield/etherfi/YieldEthStakingEtherfi.sol';
-import {YieldSavingsDai} from 'src/yield/sdai/YieldSavingsDai.sol';
+import {YieldRegistry} from 'bend-code/src/yield/YieldRegistry.sol';
+import {YieldEthStakingLido} from 'bend-code/src/yield/lido/YieldEthStakingLido.sol';
+import {YieldEthStakingEtherfi} from 'bend-code/src/yield/etherfi/YieldEthStakingEtherfi.sol';
+import {YieldSavingsDai} from 'bend-code/src/yield/sdai/YieldSavingsDai.sol';
 
-import {BendV1Migration} from 'src/migrations/BendV1Migration.sol';
+import {BendV1Migration} from 'bend-code/src/migrations/BendV1Migration.sol';
 
-import '@forge-std/Script.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Script.sol';
 
 contract UpgradeContract is DeployBase {
   using ConfigLib for Config;

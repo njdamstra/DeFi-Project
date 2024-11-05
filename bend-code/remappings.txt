@@ -5,6 +5,8 @@ config/=config/
 @ds-test/=lib/forge-std/lib/ds-test/src/
 @forge-std/=lib/forge-std/src/
 
+@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
+
 @openzeppelin/=node_modules/@openzeppelin/
 @chainlink/=node_modules/@chainlink/
 @eth-gas-reporter/=node_modules/eth-gas-reporter/

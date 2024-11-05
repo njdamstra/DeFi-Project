@@ -6,7 +6,7 @@ import {IERC20Metadata} from '@openzeppelin/contracts/token/ERC20/extensions/IER
 import {ERC20} from '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import {IERC721} from '@openzeppelin/contracts/token/ERC721/IERC721.sol';
 
-import {ILendPoolAddressesProviderV1, ILendPoolV1} from 'src/migrations/IBendV1Interface.sol';
+import {ILendPoolAddressesProviderV1, ILendPoolV1} from 'bend-code/src/migrations/IBendV1Interface.sol';
 
 import './MockBendV1Types.sol';
 import './MockBendV1LendPoolLoan.sol';

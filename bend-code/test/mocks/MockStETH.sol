@@ -5,7 +5,7 @@ import {Ownable2Step} from '@openzeppelin/contracts/access/Ownable2Step.sol';
 import {ERC20} from '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import {IERC20} from '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 
-import {IStETH, IERC20Metadata} from 'src/interfaces/IStETH.sol';
+import {IStETH, IERC20Metadata} from 'bend-code/src/interfaces/IStETH.sol';
 
 contract MockStETH is IStETH, ERC20, Ownable2Step {
   uint256 private constant RAY = 10 ** 27;

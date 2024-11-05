@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import {EnumerableSet} from '@openzeppelin/contracts/utils/structs/EnumerableSet.sol';
 
-import {IDelegateRegistryV2} from 'src/interfaces/IDelegateRegistryV2.sol';
+import {IDelegateRegistryV2} from 'bend-code/src/interfaces/IDelegateRegistryV2.sol';
 
 contract MockDelegateRegistryV2 is IDelegateRegistryV2 {
   using EnumerableSet for EnumerableSet.Bytes32Set;

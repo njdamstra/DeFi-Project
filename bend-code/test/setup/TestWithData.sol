@@ -6,12 +6,12 @@ import {SafeERC20} from '@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol
 import {IERC20Metadata} from '@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol';
 import {ERC721} from '@openzeppelin/contracts/token/ERC721/ERC721.sol';
 
-import {WadRayMath} from 'src/libraries/math/WadRayMath.sol';
-import {Constants} from 'src/libraries/helpers/Constants.sol';
+import {WadRayMath} from 'bend-code/src/libraries/math/WadRayMath.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
 
 import {TestWithSetup} from './TestWithSetup.sol';
 
-import '@forge-std/Test.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Test.sol';
 
 abstract contract TestWithData is TestWithSetup {
   using WadRayMath for uint256;

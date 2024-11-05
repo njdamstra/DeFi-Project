@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {IAddressProvider} from 'src/interfaces/IAddressProvider.sol';
-import {IACLManager} from 'src/interfaces/IACLManager.sol';
+import {IAddressProvider} from 'bend-code/src/interfaces/IAddressProvider.sol';
+import {IACLManager} from 'bend-code/src/interfaces/IACLManager.sol';
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
-import {Errors} from 'src/libraries/helpers/Errors.sol';
-import {StorageSlot} from 'src/libraries/logic/StorageSlot.sol';
-import {DataTypes} from 'src/libraries/types/DataTypes.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
+import {Errors} from 'bend-code/src/libraries/helpers/Errors.sol';
+import {StorageSlot} from 'bend-code/src/libraries/logic/StorageSlot.sol';
+import {DataTypes} from 'bend-code/src/libraries/types/DataTypes.sol';
 
-import {Base} from 'src/base/Base.sol';
-import {Proxy} from 'src/base/Proxy.sol';
+import {Base} from 'bend-code/src/base/Base.sol';
+import {Proxy} from 'bend-code/src/base/Proxy.sol';
 
 /// @notice Main storage contract
 contract PoolManager is Base {

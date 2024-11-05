@@ -6,16 +6,16 @@ import {SafeERC20} from '@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol
 import {ERC721} from '@openzeppelin/contracts/token/ERC721/ERC721.sol';
 import {ERC721Holder} from '@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol';
 
-import 'src/PoolManager.sol';
-import 'src/modules/BVault.sol';
-import 'src/modules/CrossLending.sol';
-import 'src/modules/CrossLiquidation.sol';
-import 'src/modules/IsolateLending.sol';
-import 'src/modules/IsolateLiquidation.sol';
-import 'src/modules/Yield.sol';
-import 'src/modules/FlashLoan.sol';
+import 'bend-code/src/PoolManager.sol';
+import 'bend-code/src/modules/BVault.sol';
+import 'bend-code/src/modules/CrossLending.sol';
+import 'bend-code/src/modules/CrossLiquidation.sol';
+import 'bend-code/src/modules/IsolateLending.sol';
+import 'bend-code/src/modules/IsolateLiquidation.sol';
+import 'bend-code/src/modules/Yield.sol';
+import 'bend-code/src/modules/FlashLoan.sol';
 
-import '@forge-std/console.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/console.sol';
 
 contract TestUser is ERC721Holder {
   using SafeERC20 for ERC20;

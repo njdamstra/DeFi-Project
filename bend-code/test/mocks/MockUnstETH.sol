@@ -6,8 +6,8 @@ import {ERC721} from '@openzeppelin/contracts/token/ERC721/ERC721.sol';
 import {ERC721Enumerable} from '@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol';
 import {IERC20} from '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 
-import {IStETH} from 'src/interfaces/IStETH.sol';
-import {IUnstETH} from 'src/interfaces/IUnstETH.sol';
+import {IStETH} from 'bend-code/src/interfaces/IStETH.sol';
+import {IUnstETH} from 'bend-code/src/interfaces/IUnstETH.sol';
 
 contract MockUnstETH is IUnstETH, ERC721Enumerable, Ownable2Step {
   IStETH private _stETH;

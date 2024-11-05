@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {BaseModule} from 'src/base/BaseModule.sol';
+import {BaseModule} from 'bend-code/src/base/BaseModule.sol';
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
 import {DataTypes} from '../libraries/types/DataTypes.sol';
 
-import {StorageSlot} from 'src/libraries/logic/StorageSlot.sol';
-import {ConfigureLogic} from 'src/libraries/logic/ConfigureLogic.sol';
-import {PoolLogic} from 'src/libraries/logic/PoolLogic.sol';
+import {StorageSlot} from 'bend-code/src/libraries/logic/StorageSlot.sol';
+import {ConfigureLogic} from 'bend-code/src/libraries/logic/ConfigureLogic.sol';
+import {PoolLogic} from 'bend-code/src/libraries/logic/PoolLogic.sol';
 
 /// @notice ConfiguratorPool Service Logic
 contract ConfiguratorPool is BaseModule {

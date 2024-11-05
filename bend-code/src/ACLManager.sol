@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {AccessControlUpgradeable} from '@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol';
+import {AccessControl} from 'openzeppelin/contracts/access/AccessControl.sol';
 import {IACLManager} from './interfaces/IACLManager.sol';
 import {Errors} from './libraries/helpers/Errors.sol';
 
@@ -9,7 +9,7 @@ import {Errors} from './libraries/helpers/Errors.sol';
  * @title ACLManager
  * @notice Access Control List Manager. Main registry of system roles and permissions.
  */
-contract ACLManager is AccessControlUpgradeable, IACLManager {
+contract ACLManager is AccessControl, IACLManager {
   bytes32 public constant override POOL_ADMIN_ROLE = keccak256('POOL_ADMIN');
   bytes32 public constant override EMERGENCY_ADMIN_ROLE = keccak256('EMERGENCY_ADMIN');
   bytes32 public constant override ORACLE_ADMIN_ROLE = keccak256('ORACLE_ADMIN');

@@ -4,9 +4,9 @@ pragma solidity ^0.8.0;
 import {Ownable2Step} from '@openzeppelin/contracts/access/Ownable2Step.sol';
 import {ERC20} from '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 
-import {IeETH} from 'src/yield/etherfi/IeETH.sol';
-import {ILiquidityPool} from 'src/yield/etherfi/ILiquidityPool.sol';
-import {IWithdrawRequestNFT} from 'src/yield/etherfi/IWithdrawRequestNFT.sol';
+import {IeETH} from 'bend-code/src/yield/etherfi/IeETH.sol';
+import {ILiquidityPool} from 'bend-code/src/yield/etherfi/ILiquidityPool.sol';
+import {IWithdrawRequestNFT} from 'bend-code/src/yield/etherfi/IWithdrawRequestNFT.sol';
 
 import {MockeETH} from './MockeETH.sol';
 

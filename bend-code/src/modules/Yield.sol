@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {IYield} from 'src/interfaces/IYield.sol';
+import {IYield} from 'bend-code/src/interfaces/IYield.sol';
 
 import {Constants} from '../libraries/helpers/Constants.sol';
 import {Errors} from '../libraries/helpers/Errors.sol';

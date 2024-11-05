@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {Constants} from 'src/libraries/helpers/Constants.sol';
+import {Constants} from 'bend-code/src/libraries/helpers/Constants.sol';
 
-import {Configured, ConfigLib, Config} from 'config/Configured.sol';
+import {Configured, ConfigLib, Config} from 'bend-code/config/Configured.sol';
 import {QueryBase} from './QueryBase.s.sol';
 
-import {PoolManager} from 'src/PoolManager.sol';
-import {PoolLens} from 'src/modules/PoolLens.sol';
+import {PoolManager} from 'bend-code/src/PoolManager.sol';
+import {PoolLens} from 'bend-code/src/modules/PoolLens.sol';
 
-import '@forge-std/Script.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Script.sol';
 
 interface IYieldStakingBase {
   function underlyingAsset() external view returns (address);

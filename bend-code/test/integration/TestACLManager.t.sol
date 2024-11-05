@@ -3,8 +3,8 @@ pragma solidity ^0.8.0;
 
 import '@openzeppelin/contracts/utils/Strings.sol';
 
-import 'test/setup/TestWithSetup.sol';
-import '@forge-std/Test.sol';
+import 'bend-code/test/setup/TestWithSetup.sol';
+import 'bend-code/lib/forge-std-f73c73d2018eb6a111f35e4dae7b4f27401e9421/src/Test.sol';
 
 contract TestACLManager is TestWithSetup {
   function test_RevertIf_CallerNotAdmin() public {
